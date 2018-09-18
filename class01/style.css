@@ -1,0 +1,31 @@
+body{
+    text-align: center;
+}
+
+table{
+    border-spacing:5px;
+    width:60%;
+    margin:auto;
+    font-size:1.5em;
+}
+th{
+    padding:5px; 
+    background-color:rgb(212,212,212);
+    border-bottom:2px double rgb(0,0,0);
+    border-right:2px double rgb(0,0,0);
+}
+td{
+    border-bottom:1px solid blue;
+    border-right:1px solid blue;
+}
+
+/*td:nth-child(even) {
+    background-color: #ccc;
+}*/
+td.even{
+    /* border-bottom: 2px dashed brown; */
+    background-color: lightgoldenrodyellow;
+}
+td:hover {
+    background: #E6FBFF;
+}

@@ -1,0 +1,71 @@
+div{
+    width: 1200px;
+    height: 896px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 50px grey;
+}
+#sun{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color:yellow;
+    border: 2px solid lightyellow;
+    box-shadow: 10px 10px 50px lightyellow;
+    transition: 2s;
+
+    position: absolute;
+    top:50px;
+    left:50px;
+}
+#sun:hover{
+    width: 150px;
+    height: 150px;
+}
+
+#windmill{
+    position: absolute;
+    top:300px;
+    left: 830px;
+    animation: rotate 10s infinite linear;
+}
+@keyframes rotate{ 
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+#bird{
+    transform: scale(0.2);
+    position: absolute;
+    top:300px;
+    left:0px;
+    
+    animation: example 3s infinite linear;
+}
+@keyframes example {
+    0%   {background-color:transparent; left:0px; top:0px;}
+    100% {background-color:transparent;left:50vw; top:0px;}
+}
+
+#tower{
+    position: absolute;
+    top:400px;
+    left:850px;
+}
+
+.multi_bg_example {
+  background-image   : url(css3/images/ft3rail.png),
+                       url(css3/images/cow.png),
+                       url(css3/images/grass_blue_sky_background.jpg);
+                       
+  background-repeat  : no-repeat,
+                       no-repeat,
+                       no-repeat;
+
+  background-position: 0 650px,
+                       50px 650px,
+                       0 0;
+    
+  background-size:     35%,
+                       25%,
+                       100%;
+}
